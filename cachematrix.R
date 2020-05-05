@@ -8,7 +8,7 @@ makeCacheMatrix <- function(x = matrix()) {
         set <- function(y)
               {
                 x <<- y          ##assign the value ofmatrix in the parent environment
-                inv <- NULL
+                inv <<- NULL
               }
         get <- function() x
         setinverse <- function(inverse) inv <<- inverse     ##assign the value of inverse of matrix in the parent environment
